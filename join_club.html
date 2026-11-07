@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join the club    |   Pet lover club</title>
+</head>
+<body>
+<header>
+        <h1>Join the pet lover club!</h1>
+        <p>We would love to hear about your favourite animal!</p>
+            <nav>
+                <a href="index.html">Home</a>   |
+                <a href="pets.html">Explore our Pets</a>    |
+                <a href="pet_comparison.html">Pet Comparison</a>    |
+                <a href="join_club.html">Join Our Club</a>  |
+            </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Become a member</h2>
+
+            <p>Complete the form below to tell us about yourself and your favourite animals!</p>
+            <form>
+                <fieldset>
+                    <legend>About you</legend>
+                    <p>
+                        <label for="fullname">Full name:</label><br>
+                        <input type="text" id="fullname" name="fullname"
+                               required>
+
+                        <p>
+                            <label for="email">Email address:</label>
+                            <input type="email" id="email" name="email"
+                               required>
+
+                        </p>
+
+                </fieldset>
+                    <legend>Your Favourite pet</legend>
+
+                    <p>
+                        <label for="favourite-pet">Which is your favourite pet?</label><br>
+                        <select id="favourite-pet" name="favourite-pet" required>
+                            <option value="">Choose</option>
+                            <option value="dog">dog</option>
+                            <option value="cat">cat</option>
+                            <option value="bunny">bunny</option>
+                            <option value="tortoise">tortoise</option>
+                            <option value="hedgehog">hedgehog</option>
+                        </select>
+                    </p>
+
+                    <p>Which pet do you own?</p>
+                    <input type="checkbox" id="own-dog" name="pets[]" value="dog">
+                    <label for="own-dog">Dog</label><br>
+
+                    <input type="checkbox" id="own-cat" name="pets[]" value="cat">
+                    <label for="own-cat">cat</label><br>
+
+                    <input type="checkbox" id="own-bunny" name="pets[]" value="bunny">
+                    <label for="own-bunny">bunny</label><br>
+
+                    <input type="checkbox" id="own-tortoise" name="pets[]" value="tortoise">
+                    <label for="own-tortoise">tortoise</label><br>
+
+                    <input type="checkbox" id="own-hedgehog" name="pets[]" value="hedgehog">
+                    <label for="own-hedgehog">hedgehog</label><br>
+
+                <fieldset>
+                    <legend>Your pet experience</legend>
+                    <p>How much experience do you have caring for your pets?</p>
+                    <input type="radio" id="beginner" name="experience"
+                           value="beginner" required>
+                    <label for="beginner">Beginner</label><br>
+
+                    <input type="radio" id="some-experience" name="experience"
+                           value="some" required>
+                    <label for="some-experience">Some experience</label><br>
+
+                    <input type="radio" id="experienced" name="experience"
+                           value="experienced" required>
+                    <label for="experienced">Very experienced</label><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tell us more</legend>
+                    <p>
+                        <label for="reason">Why do you love animals?</label>
+                        <textarea id="reason" name="reason" row="5" cols="40"
+                                  placeholder="Tell us your story..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Join the club</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+<hr>
+
+<footer>
+    <p>&copy; 2026 pet lover club. All rights reserved.</p>
+    <p><a href="index.html">Back to home</a></p>
+</footer>
+</body>
+</html>
